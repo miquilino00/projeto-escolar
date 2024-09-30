@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Vídeos</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarTodos()">Todos os vídeos</a></li>
+                <li><a href="#" onclick="filtrarCategoria('JOGOS')">Jogos</a></li>
+                <li><a href="#" onclick="filtrarCategoria('FILMES')">Filmes</a></li>
+                <li><a href="#" onclick="filtrarCategoria('SERIES')">Serie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="videos" class="video-grid">
+            <h2>Todos os Vídeos</h2>
+
+            <!-- Vídeo 1 -->
+            <article class="video-item" data-categoria="JOGOS">
+                <iframe width="100%" height="200" src="https://youtu.be/o00f-GlCgqA?si=WpF2x83yZSr2RAfp" title="Vídeo 1"></iframe>
+                <h3>Minecraft : ÚLTIMA ESPERANÇA !! - ( Polícia e Ladrão)</h3>
+                <p>JOGOS</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+
+            <!-- Vídeo 2 -->
+            <article class="video-item" data-categoria="JOGOS">
+                <iframe width="100%" height="200" src="https://youtu.be/wWeGK9v14e4?si=DOQ2yWRH2zMy61gG" title="Vídeo 2"></iframe>
+                <h3>UM MONSTRO ASSUSTADOR INVADIU A MINHA CASA! ME AJUDEM! (Parte 1)</h3>
+                <p>JOGOS</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+
+            <!-- Vídeo 3 -->
+            <article class="video-item" data-categoria="JOGOS">
+                <iframe width="100%" height="200" src="https://youtu.be/_MNJFJU3b3A?si=Zfp0jlkmY9QWgbhX" title="Vídeo 3"></iframe>
+                <h3>X1... MEU IRMÃO MAIS NOVO VS GABRIEL</h3>
+                <p>JOGOS</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+            
+            <!-- Vídeo 4 -->
+            <article class="video-item" data-categoria="FILMES">
+                <iframe width="100%" height="200" src="https://youtu.be/eWtv4vFaEwM?si=mQ4a_yZf2DrmL31P" title="Vídeo 4"></iframe>
+                <h3>Internet O Filme é realmente a pior coisa já produzida pelo ser humano?</h3>
+                <p>FILMES</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+
+            <!-- Vídeo 5 -->
+            <article class="video-item" data-categoria="FILMES">
+                <iframe width="100%" height="200" src="https://youtu.be/1F0CGl03bws?si=G7adtNiKU4SIDWdm" title="Vídeo 5"></iframe>
+                <h3>O MENU - Que cabógis de filme é esse?</h3>
+                <p>FILMES</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+
+            <!-- Vídeo 6 -->
+            <article class="video-item" data-categoria="FILMES">
+                <iframe width="100%" height="200" src="https://youtu.be/DZqXks0MjOM?si=6bn0bPv1ThfKHmlT" title="Vídeo 6"></iframe>
+                <h3>Saga Olhos Famintos | História, Curiosidades e Análise dos filmes</h3>
+                <p>FILMES</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+
+            <!-- Vídeo 7 -->
+            <article class="video-item" data-categoria="SERIES">
+                <iframe width="100%" height="200" src="https://youtu.be/ukNHPUcZhBc?si=sXqF_AZ43TFOzhhr" title="Vídeo 7"></iframe>
+                <h3>O PACIENTE É UMA SÉRIE MUITO PESADA! Análise completa!</h3>
+                <p>SERIES</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+
+            <!-- Vídeo 8 -->
+            <article class="video-item" data-categoria="SERIES">
+                
+                <h3>THEM: ANÁLISE DOS FANTASMAS e ESPÍRITOS e suas EXPLICAÇÕES - Série da Amazon Prime</h3>
+                <p>SERIES</p>
+                <button onclick="toggleLike(this)">Curtir</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
